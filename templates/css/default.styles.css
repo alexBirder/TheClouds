@@ -105,9 +105,9 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 .containerFooter .containerFooter--left .containerFooter--menu a { display: inline-block; border-right: 1px solid rgba(255,255,255,0.2); padding: 5px 0; margin-right: 20px; padding-right: 20px; color: rgba(255,255,255,1); font-size: 14px; text-transform: uppercase; transition: all .2s; }
 .containerFooter .containerFooter--left .containerFooter--menu a:hover { color: #fff; text-decoration: none; }
 .containerFooter .containerFooter--left .containerFooter--menu a:last-child { border-right: none; }
-.containerFooter .containerFooter--left .containerFooter--copyrights { color: rgba(255,255,255,0.7); }
+.containerFooter .containerFooter--left .containerFooter--copyrights { color: rgba(255,255,255,0.7); font-size: 14px; }
 .containerFooter .containerFooter--studio { float: right; height: 36px; line-height: 36px; font-size: 12px; font-weight: 500; text-transform: uppercase; }
-.containerFooter .containerFooter--studio a { color: #fff; font-size: 12px; }
+.containerFooter .containerFooter--studio a { color: #fff; font-size: 14px; }
 .containerFooter .containerFooter--studio a img { margin-left: 10px; }
 
 /* ---- ---- ---- ---- ---- ---- ---- ---- */
