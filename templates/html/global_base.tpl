@@ -74,7 +74,16 @@
 </div>
 <footer class="containerFooter">
     <div class="containerWrapper">
-
+        <div class="containerFooter--left">
+            <div class="containerFooter--menu">
+                <a href="/{LANG}/page/about.html">О компании</a>
+                <a href="/{LANG}/page/tarify.html">Тарифы</a>
+                <a href="/{LANG}/page/cooperation.html">Сотрудничество</a>
+                <a href="/{LANG}/page/contacts.html">Контакты</a>
+            </div>
+            <div class="containerFooter--copyrights">TheClouds &copy; 2019. Все права защищены.</div>
+        </div>
+        <div class="containerFooter--studio"><a href="http://mcdesign.ua" target="_blank">Разработано в mc design <img src="{IMAGES_DIR}/mc.png" alt="" width="36" height="36"></a></div>
     </div>
 </footer>
 
