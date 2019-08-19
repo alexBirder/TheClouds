@@ -99,7 +99,7 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 .containerMain--bar .containerMain--bar--content .containerMain--bar--element b { display: block; padding-bottom: 15px; font-size: 16px; }
 
 /* ---- ---- ---- ---- ---- ---- ---- ---- */
-.containerFooter { background: #3c4c6e; padding: 40px 0; }
+.containerFooter { background: #3c4c6e; padding: 40px 0; margin-top: 2px; }
 
 /* ---- ---- ---- ---- ---- ---- ---- ---- */
 .checkList li::before { content: url('../img/chec.png');}
