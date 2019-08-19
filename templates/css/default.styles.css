@@ -107,7 +107,7 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 .containerFooter .containerFooter--left .containerFooter--menu a:last-child { border-right: none; }
 .containerFooter .containerFooter--left .containerFooter--copyrights { color: rgba(255,255,255,0.7); }
 .containerFooter .containerFooter--studio { float: right; height: 36px; line-height: 36px; font-size: 12px; font-weight: 500; text-transform: uppercase; }
-.containerFooter .containerFooter--studio a { color: #fff; }
+.containerFooter .containerFooter--studio a { color: #fff; font-size: 12px; }
 .containerFooter .containerFooter--studio a img { margin-left: 10px; }
 
 /* ---- ---- ---- ---- ---- ---- ---- ---- */
