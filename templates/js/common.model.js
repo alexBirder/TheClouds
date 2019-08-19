@@ -5,7 +5,7 @@ $(document).ready(function(){
     $('input[name="form[Телефон]"]').mask("+38 (999) 999-99-99");
 
     //-----------------------------------------
-    $('.containerSlider--content').lightSlider({ auto: true, pager: false, controls: false, item: 1, mode: 'fade', loop: true, pause: 4000 });
+    $('.containerSlider--content--sliders').lightSlider({ auto: true, pager: false, controls: false, item: 1, mode: 'fade', loop: true, pause: 4000 });
 
     //-----------------------------------------
     $('.sliderFooter').lightSlider({ auto: true, pager: false, controls: false, item: 3, loop: true, adaptiveHeight: true, pause: 4000 });
