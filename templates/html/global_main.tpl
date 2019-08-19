@@ -121,4 +121,8 @@
             </div>
         </div>
     </div>
+    <!-- BEGIN: seo_block -->
+    {SEO.title}
+    {SEO.text}
+    <!-- END: seo_block -->
 </main>
