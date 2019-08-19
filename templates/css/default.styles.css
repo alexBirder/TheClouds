@@ -25,7 +25,7 @@
 .containerSlider .containerSlider--bottom .containerSlider--bottom--element .element--link { position: relative; font-size: 15px; }
 .containerSlider .containerSlider--bottom .containerSlider--bottom--element .element--link a { display: block; padding: 30px 50px 30px 25px; color: #fff; text-decoration: none; background: url('../img/arrow.png') right 25px center no-repeat; }
 .containerSlider .containerSlider--bottom .containerSlider--bottom--title { margin-bottom: 100px; border-left: 5px solid #f94940; padding: 10px 20px; color: #fff; font-size: 36px; max-width: 300px; line-height: 36px; }
-.containerSlider .containerSlider--menu { position: absolute; top: 152px; left: 40px; width: 84px; }
+.containerSlider .containerSlider--menu { position: absolute; top: 152px; left: 40px; width: 84px; z-index: 500; }
 .containerSlider .containerSlider--menu .containerSlider--menu--element { width: 70px; height: 70px; border-radius: 4px; border: 2px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); display: block; margin-bottom: 15px; position: relative; transition: all .2s; }
 .containerSlider .containerSlider--menu .containerSlider--menu--element:hover { border: 2px solid rgba(255,255,255,0.5); color: rgba(255,255,255,1); text-decoration: none; }
 .containerSlider .containerSlider--menu .containerSlider--menu--element span { display: block; position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; box-sizing: border-box; font-size: 15px; line-height: 16px; }
