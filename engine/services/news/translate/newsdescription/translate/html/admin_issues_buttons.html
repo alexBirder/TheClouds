@@ -1,0 +1,14 @@
+<?php
+foreach($this->CONF['langs'] as $lang => $language):
+    if($language['main'] == false):
+    $name_lang = $language[name];
+    $main_lang = $language['main'];
+    $block_id_02 = sprintf('block_form_%s', $lang);
+?>
+
+<a href="javascript:void(0)" data-tab="<?=$block_id_02?>"><?=$name_lang?></a>
+
+<?php
+    endif;
+    endforeach;
+?>

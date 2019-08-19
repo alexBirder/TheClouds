@@ -1,0 +1,36 @@
+<?php
+foreach($this->CONF['langs'] as $lang => $language):
+	if($language['main'] == false):
+
+		$block_id_01 = sprintf('block_button_%s', $lang);
+		$block_id_02 = sprintf('block_form_%s', $lang);
+
+        $intro_id = sprintf('plugin_translate[%s][intro]', $lang);
+        $intro_value = $edit_id ? $this->DB->sql2result("SELECT `intro` FROM adwords_items_translate WHERE `id` = '$edit_id' AND `lang` LIKE '$lang'") : '';
+
+		$url_id = sprintf('plugin_translate[%s][url]', $lang);
+		$url_value = $edit_id ? $this->DB->sql2result("SELECT `url` FROM adwords_items_translate WHERE `id` = '$edit_id' AND `lang` LIKE '$lang'") : '';
+
+		?>
+
+<div class="languageBlock" id="<?=$block_id_02?>" style="display: none;">
+    <table class="areasTable">
+        <tr class="areasTable--tr">
+            <td class="areasTable--title" width="160">URL адрес</td>
+            <td class="areasTable--content">
+                <div class="areasTable--content--right"><a href="#" class="button buttonMedium buttonGreen buttonBlock generate">Генерировать адрес</a></div>
+                <div class="areasTable--content--left"><input type="text" name="<?=$url_id?>" class="areasTable--input" maxlength="255" value="<?=$url_value?>"></div>
+            </td>
+        </tr>
+        <tr class="areasTable--tr">
+            <td class="areasTable--title" width="160">Описание на баннере</td>
+            <td class="areasTable--content"><textarea name="<?=$intro_id?>" class="text--editor"><?=$intro_value?></textarea></td>
+        </tr>
+    </table>
+</div>
+
+<?php
+
+	endif;
+endforeach;
+?>

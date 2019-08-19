@@ -1,0 +1,41 @@
+<?php
+foreach($this->CONF['langs'] as $lang => $language):
+if($language['main'] == false):
+
+$block_id_01 = sprintf('block_button_%s', $lang);
+$block_id_02 = sprintf('block_form_%s', $lang);
+
+$title_id = sprintf('plugin_translate[%s][title]', $lang);
+$title_value = $edit_id ? $this->DB->sql2result("SELECT `title` FROM photos_issues_translate WHERE `id` = '$edit_id' AND `lang` LIKE '$lang'") : '';
+
+$FCK_KEY = sprintf('plugin_translate[%s][text]', $lang);
+$text_value = $edit_id ? $this->DB->sql2result("SELECT `text` FROM photos_issues_translate WHERE `id` = '$edit_id' AND `lang` LIKE '$lang'") : '';
+
+?>
+
+<div class="languageBlock" id="<?=$block_id_02?>" style="display: none;">
+	<table class="areasTable">
+		<tr class="areasTable--tr">
+			<td class="areasTable--title" width="160">Заголовок</td>
+			<td class="areasTable--content"><input type="text" name="<?=$title_id?>" class="areasTable--input" maxlength="255" value="<?=$title_value?>"></td>
+		</tr>
+		<tr class="areasTable--tr">
+			<td class="areasTable--title" width="160">Описание альбома</td>
+			<td class="areasTable--content"><textarea name="<?=$FCK_KEY?>" class="text--editor"><?=$text_value?></textarea></td>
+		</tr>
+		<tr class="areasTable--tr">
+			<td class="areasTable--title" width="160">Meta заголовок</td>
+			<td class="areasTable--content"><input type="text" name="meta_title" class="areasTable--input" maxlength="1000" value="<?=@$item_to_edit['meta_title']?>"></td>
+		</tr>
+		<tr class="areasTable--tr">
+			<td class="areasTable--title" width="160">Meta описание</td>
+			<td class="areasTable--content"><input type="text" name="meta_description" class="areasTable--input" maxlength="1000" value="<?=@$item_to_edit['meta_description']?>"></td>
+		</tr>
+		<tr class="areasTable--tr">
+			<td class="areasTable--title" width="160">Meta ключевые слова</td>
+			<td class="areasTable--content"><input type="text" name="meta_keywords" class="areasTable--input" maxlength="1000" value="<?=@$item_to_edit['meta_keywords']?>"></td>
+		</tr>
+	</table>
+</div>
+
+<?php endif; endforeach; ?>

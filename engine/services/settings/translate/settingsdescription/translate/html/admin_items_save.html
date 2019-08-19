@@ -1,0 +1,19 @@
+<?php
+foreach($this->CONF['langs'] as $lang => $language):
+    if($language['main'] == false):
+		$block_id_02 = sprintf('block_form_%s', $lang);
+
+		$word_id = sprintf('plugin_translate[%s][word]', $lang);
+		$word_value = $edit_id ? $this->DB->sql2result("SELECT `word` FROM settings_words_translate WHERE `id` = '$edit_id' AND `lang` LIKE '$lang'") : '';
+?>
+
+<div class="languageBlock" id="<?=$block_id_02?>" style="display: none;">
+    <table class="areasTable">
+        <tr class="areasTable--tr">
+            <td class="areasTable--title" width="160">Слово или предложение</td>
+            <td class="areasTable--content"><input type="text" name="<?=$word_id?>" class="areasTable--input" maxlength="255" value="<?=$word_value?>"></td>
+        </tr>
+    </table>
+</div>
+
+<?php endif; endforeach; ?>
