@@ -98,6 +98,10 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 .containerMain--bar .containerMain--bar--content .containerMain--bar--element { float: left; width: 33.3333%; padding: 0 20px; box-sizing: border-box; text-align: center; color: #fff; line-height: 21px; border-bottom: 3px solid #f24841; min-height: 120px; font-size: 14px; }
 .containerMain--bar .containerMain--bar--content .containerMain--bar--element b { display: block; padding-bottom: 15px; font-size: 16px; }
 
+/* ---- ---- ---- ---- ---- ---- ---- ---- */
+.containerFooter { background: #3c4c6e; padding: 40px 0; }
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- */
 .checkList li::before { content: url('../img/chec.png');}
 .checkList { list-style: none;}
 .checkList li { border-bottom: 1px solid #8080804f; padding: 13px 0 0 0; font-size: 18px; color: #3c4c6e;}

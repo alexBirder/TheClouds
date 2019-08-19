@@ -72,6 +72,11 @@
         </div>
     </div>
 </div>
+<footer class="containerFooter">
+    <div class="containerWrapper">
+
+    </div>
+</footer>
 
 {FILE {COOKIES}}
 {SCRIPTS}
