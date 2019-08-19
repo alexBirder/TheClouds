@@ -102,7 +102,7 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 .containerFooter { background: #3c4c6e; padding: 40px; margin-top: 2px; overflow: hidden; }
 .containerFooter .containerFooter--left { float: left; }
 .containerFooter .containerFooter--left .containerFooter--menu { position: relative; padding-bottom: 15px; }
-.containerFooter .containerFooter--left .containerFooter--menu a { display: inline-block; border-right: 1px solid rgba(255,255,255,0.2); padding: 5px 20px; color: rgba(255,255,255,0.7); font-size: 14px; text-transform: uppercase; transition: all .2s; }
+.containerFooter .containerFooter--left .containerFooter--menu a { display: inline-block; border-right: 1px solid rgba(255,255,255,0.2); padding: 5px 0; margin-right: 40px; color: rgba(255,255,255,0.7); font-size: 14px; text-transform: uppercase; transition: all .2s; }
 .containerFooter .containerFooter--left .containerFooter--menu a:hover { color: #fff; text-decoration: none; }
 .containerFooter .containerFooter--left .containerFooter--menu a:last-child { border-right: none; }
 .containerFooter .containerFooter--left .containerFooter--copyrights { color: rgba(255,255,255,0.7); }
