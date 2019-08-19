@@ -122,7 +122,10 @@
         </div>
     </div>
     <!-- BEGIN: seo_block -->
-    {SEO.title}
-    {SEO.text}
+    <div class="containerSeo">
+        <div class="containerWrapper">
+            {SEO.text}
+        </div>
+    </div>
     <!-- END: seo_block -->
 </main>
