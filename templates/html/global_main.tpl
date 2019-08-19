@@ -6,16 +6,9 @@
         <a href="/page/tarify.html" class="containerSlider--menu--element"><span>XL <small><br/>tariff</small></span></a>
     </div>
     <div class="containerSlider--content">
-        <div class="containerSlider--element" style="background: url('{IMAGES_DIR}/slide.jpg') center center no-repeat;">
-            <div class="containerSlider--present">
-                <div class="containerWrapper">
-                    <div class="containerSlider--present--title">Тариф S</div>
-                    <div class="containerSlider--present--intro"> &mdash; <strong>Выбор ОС</strong> Windows <br/> &mdash; <strong>PANEL</strong> ISP MANAGER <br/> &mdash; <strong>CPU</strong> 1 x3.4ГГц <br/> &mdash; <strong>RAM</strong> 1 Гб <br/></div>
-                    <div class="containerSlider--present--price"><span>12$</span></div>
-                    <div class="containerSlider--present--button"><a href="/ru/page/tarify.html" class="button--slider">Подробнее</a></div>
-                </div>
-            </div>
-        </div>
+        <!-- BEGIN: main_slider_top -->
+        {FILE {MAIN_SLIDER_TOP}}
+        <!-- END: main_slider_top -->
     </div>
     <div class="containerSlider--bottom">
         <div class="containerWrapper">
