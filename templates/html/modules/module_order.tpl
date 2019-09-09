@@ -11,8 +11,8 @@
                 <li><img src="/templates/img/5i.png" alt=""><strong>DISK</strong> HDD 20 Гб</li>
                 <li><img src="/templates/img/6i.png" alt=""><strong>IP</strong> 1 IP</li>
             </ul>
-            <div class="offers--element--price"><span>{ORD.format} {ORD.price.currency}</span></div>
-            <div class="offers--element--intro">Normally €26.73<br />1VAT not included<br />Initial term of 36 months</div>
+            <div class="offers--element--price"><span>{ORD.format} USD</span></div>
+            <!--<div class="offers--element--intro">Normally €26.73<br />1VAT not included<br />Initial term of 36 months</div>-->
             <div class="offers--element--button"><a href="/ru/page/tarify.html" class="button--offers">Подробнее</a></div>
         </div>
     </div>
