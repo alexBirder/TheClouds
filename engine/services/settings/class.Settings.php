@@ -45,7 +45,8 @@ class TSettings extends TCore {
                 ),
                 'cpu' => $item['cpu'],
                 'ram' => $item['ram'],
-                'hdd' => $item['hdd']
+                'hdd' => $item['hdd'],
+                'dedicated_ips' => $item['dedicated_ips'],
             );
             $this->TPL->assign(array('ORD' => $data));
             $this->TPL->parse($this->CONF['base_tpl'] . '.orders.item');
