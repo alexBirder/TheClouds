@@ -12,7 +12,7 @@
                 <li><img src="/templates/img/6i.png" alt=""><strong>IP</strong> {ORD.dedicated_ips} IP</li>
             </ul>
             <div class="offers--element--price"><span>{ORD.price.value} {ORD.price.prefix}</span></div>
-            <!--<div class="offers--element--intro">Normally €26.73<br />1VAT not included<br />Initial term of 36 months</div>-->
+            <div class="offers--element--intro">1VAT not included<br />Initial term of 36 months</div>
             <div class="offers--element--button"><a href="/ru/page/tarify.html" class="button--offers">Подробнее</a></div>
         </div>
     </div>
