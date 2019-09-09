@@ -40,8 +40,9 @@ class TSettings extends TCore {
                 'type' => $item['hostingaccount'],
                 'name' => $item['name'],
                 'price' => array(
-                    'value' => $item['price']['month']['price'],
-                    'prefix' => $item['price']['month']['prefix'],
+                    'value' => $item['price']['price'],
+                    'prefix' => $item['price']['prefix'],
+                    'period' => $item['price']['period'],
                 ),
                 'url' => base64_decode($item['url']),
                 'cpu' => $item['cpu'],
