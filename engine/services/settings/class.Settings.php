@@ -29,7 +29,7 @@ class TSettings extends TCore {
     //-- PRIVATE ---------------------------------------------------------------
 
     public function get_orders(){
-        $template = $this->template_file("/templates/html/modules", "module_orders.tpl", $this->lang);
+        $template = $this->template_file("/templates/html/modules", "module_order.tpl", $this->lang);
         $this->TPL->assign_file('ORDERS', $template);
 
         $json_link = "https://panel.theclouds.pro/modules/addons/fs/tariff-list.php";
