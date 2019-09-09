@@ -41,7 +41,7 @@ class TPage extends TCore {
 
         if($this->item > 0){
             $data = $this->DB->sql2row("SELECT `title`, `text` FROM `page_items` WHERE `id` = {$this->item} AND `enabled` = 'y'");
-            if($this->item == '11') $this->call_module('settings', 'get_orders', '.work_part');
+            if($this->item == '11') $this->call_module('settings', 'get_orders_inside');
             $this->transform_data($data, $this->item);
             $this->TPL->assign('CMS_DATA', $data['text']);
         } else {
