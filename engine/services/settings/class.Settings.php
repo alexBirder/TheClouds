@@ -52,10 +52,10 @@ class TSettings extends TCore {
                 'dedicated_ips' => $item['dedicated_ips'],
             );
             $this->TPL->assign(array('ORD' => $data));
-            $this->TPL->parse($this->CONF['base_tpl'] . $tpl . '.orders.item');
+            $this->TPL->parse($this->CONF['base_tpl'] . ''.$tpl.'' . '.orders.item');
         }
 
-        $this->TPL->parse($this->CONF['base_tpl'] . $tpl . '.orders');
+        $this->TPL->parse($this->CONF['base_tpl'] . ''.$tpl.'' . '.orders');
     }
 
     public function get_orders_inside(){
