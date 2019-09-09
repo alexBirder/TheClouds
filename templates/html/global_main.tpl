@@ -32,13 +32,6 @@
 <main class="containerMain">
     <div class="containerMain--tabs">
         <div class="containerWrapper">
-
-            <div style="clear: both;">
-                <!-- BEGIN: orders -->
-                {FILE {ORDERS}}
-                <!-- END: orders -->
-            </div>
-
             <div class="containerMain--tabs--content">
                 <ul class="reset">
                     <li><a href="/page/virtual_dedicated_server_vds.html" class="active">VDS</a></li>
@@ -53,6 +46,10 @@
     <div class="containerMain--offers">
         <div class="containerWrapper">
             <div class="containerMain--offers--tab" id="offers-1">
+                <!-- BEGIN: orders -->
+                {FILE {ORDERS}}
+                <!-- END: orders -->
+                <!--
                 <div class="offers--element">
                     <div class="offers--element--content">
                         <div class="offers--element--title">Тариф S</div>
@@ -125,6 +122,7 @@
                         </div>
                     </div>
                 </div>
+                -->
             </div>
         </div>
     </div>
