@@ -15,14 +15,14 @@ class TSettings extends TCore {
     public function process(){
         $this->word_translate();
         $this->menu_main();
-        $this->get_orders();
+        //$this->get_orders();
         $this->show_cookies();
     }
 
     public function execute(){
         $this->word_translate();
         $this->menu_main();
-        $this->get_orders();
+        //$this->get_orders();
         $this->show_cookies();
     }
 
