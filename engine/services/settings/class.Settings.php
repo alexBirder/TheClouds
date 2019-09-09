@@ -15,16 +15,40 @@ class TSettings extends TCore {
     public function process(){
         $this->word_translate();
         $this->menu_main();
+        $this->get_orders();
         $this->show_cookies();
     }
 
     public function execute(){
         $this->word_translate();
         $this->menu_main();
+        $this->get_orders();
         $this->show_cookies();
     }
 
     //-- PRIVATE ---------------------------------------------------------------
+
+    public function get_orders(){
+        $template = $this->template_file("/templates/html/modules", "module_orders.tpl", $this->lang);
+        $this->TPL->assign_file('ORDERS', $template);
+
+        $json_link = "https://panel.theclouds.pro/modules/addons/fs/tariff-list.php";
+        $items = json_decode($json_link);
+
+        foreach ($items as $item){
+            $data = array(
+                'type' => $item['hostingaccount'],
+                'name' => $item['name'],
+                'tax' => $item['tax'],
+                'order' => $item['order'],
+                'price' => array('setupfee' => $item['setupfee'], 'price' => $item['price']),
+            );
+            $this->TPL->assign(array('ORD' => $data));
+            $this->TPL->parse($this->CONF['base_tpl'] . '.orders.item');
+        }
+
+        $this->TPL->parse($this->CONF['base_tpl'] . '.orders');
+    }
 
     public function show_cookies(){
         if(policy_cookie() == 'y') {
