@@ -32,7 +32,7 @@ class TSettings extends TCore {
         $template = $this->template_file("/templates/html/modules", "module_order.tpl", $this->lang);
         $this->TPL->assign_file('ORDERS', $template);
 
-        $json_link = "https://panel.theclouds.pro/modules/addons/fs/tariff-list.php";
+        $json_link = file_get_contents("https://panel.theclouds.pro/modules/addons/fs/tariff-list.php");
         $items = json_decode($json_link, true);
 
         foreach ($items as $item){
