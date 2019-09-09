@@ -32,6 +32,11 @@
 <main class="containerMain">
     <div class="containerMain--tabs">
         <div class="containerWrapper">
+
+            <!-- BEGIN: orders -->
+            {FILE {ORDERS}}
+            <!-- END: orders -->
+
             <div class="containerMain--tabs--content">
                 <ul class="reset">
                     <li><a href="/page/virtual_dedicated_server_vds.html" class="active">VDS</a></li>
