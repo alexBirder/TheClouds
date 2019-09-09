@@ -33,7 +33,6 @@ class TPage extends TCore {
     public function process(){
         if($this->item == '11'){
             $template = $this->template_file("/templates/html/modules", "module_page_ord.tpl", $this->lang);
-            $this->call_module('settings', 'get_orders_inside');
         } else {
             $template = $this->template_file("/templates/html/modules", "module_page.tpl", $this->lang);
         }
@@ -42,6 +41,7 @@ class TPage extends TCore {
 
         if($this->item > 0){
             $data = $this->DB->sql2row("SELECT `title`, `text` FROM `page_items` WHERE `id` = {$this->item} AND `enabled` = 'y'");
+            if($this->item == '1') $this->call_module('settings', 'get_orders_inside');
             $this->transform_data($data, $this->item);
             $this->TPL->assign('CMS_DATA', $data['text']);
         } else {
