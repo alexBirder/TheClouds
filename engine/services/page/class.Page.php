@@ -31,7 +31,12 @@ class TPage extends TCore {
     //-- PUBLIC ----------------------------------------------------------------
 
     public function process(){
-        $template = $this->template_file("/templates/html/modules", "module_page.tpl", $this->lang);
+        if($this->item == '11'){
+            $template = $this->template_file("/templates/html/modules", "module_page_ord.tpl", $this->lang);
+        } else {
+            $template = $this->template_file("/templates/html/modules", "module_page.tpl", $this->lang);
+        }
+
         $this->TPL->assign_file('WORK_PART', $template);
 
         if($this->item > 0){
