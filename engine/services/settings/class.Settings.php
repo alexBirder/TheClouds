@@ -42,7 +42,8 @@ class TSettings extends TCore {
                 'tax' => $item['tax'],
                 'order' => $item['order'],
                 'price' => array(
-                    'currency' => array('month' => $item['price']['USD']['month'], 'format' => $item['price']['USD']['month']['price'])
+                    'currency' => $item['price'],
+                    //'currency' => array('month' => $item['price']['USD']['month'], 'format' => $item['price']['USD']['month']['price'])
                 ),
                 'month' => $item['price']['USD']['month'],
                 'format' => $item['price']['USD']['month']['price']
