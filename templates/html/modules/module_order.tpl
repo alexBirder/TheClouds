@@ -4,7 +4,7 @@
         <div class="offers--element--title">{ORD.name}</div>
         <div class="offers--element--present">
             <ul class="reset">
-                <li><img src="/templates/img/1i.png" alt=""><strong>Выбор ОС</strong> Windows</li>
+                <li><img src="/templates/img/1i.png" alt=""><strong>Выбор ОС</strong> {ORD.system}</li>
                 <li><img src="/templates/img/2i.png" alt=""><strong>PANEL</strong> ISP MANAGER</li>
                 <li><img src="/templates/img/3i.png" alt=""><strong>CPU</strong> {ORD.cpu} CORE</li>
                 <li><img src="/templates/img/4i.png" alt=""><strong>RAM</strong> {ORD.ram} ГБ</li>
