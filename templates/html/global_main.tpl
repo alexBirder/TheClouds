@@ -33,9 +33,11 @@
     <div class="containerMain--tabs">
         <div class="containerWrapper">
 
-            <!-- BEGIN: orders -->
-            {FILE {ORDERS}}
-            <!-- END: orders -->
+            <div style="clear: both;">
+                <!-- BEGIN: orders -->
+                {FILE {ORDERS}}
+                <!-- END: orders -->
+            </div>
 
             <div class="containerMain--tabs--content">
                 <ul class="reset">
