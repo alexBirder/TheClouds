@@ -16,7 +16,6 @@ class TSettings extends TCore {
         $this->word_translate();
         $this->menu_main();
         $this->get_orders();
-        $this->get_orders_inside();
         $this->show_cookies();
     }
 
@@ -24,7 +23,6 @@ class TSettings extends TCore {
         $this->word_translate();
         $this->menu_main();
         $this->get_orders();
-        $this->get_orders_inside();
         $this->show_cookies();
     }
 
