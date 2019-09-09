@@ -16,6 +16,7 @@ class TSettings extends TCore {
         $this->word_translate();
         $this->menu_main();
         $this->get_orders();
+        $this->get_orders_inside();
         $this->show_cookies();
     }
 
@@ -23,6 +24,7 @@ class TSettings extends TCore {
         $this->word_translate();
         $this->menu_main();
         $this->get_orders();
+        $this->get_orders_inside();
         $this->show_cookies();
     }
 
@@ -56,6 +58,36 @@ class TSettings extends TCore {
         }
 
         $this->TPL->parse($this->CONF['base_tpl'] . '.orders');
+    }
+
+    public function get_orders_inside(){
+        $template = $this->template_file("/templates/html/modules", "module_order.tpl", $this->lang);
+        $this->TPL->assign_file('ORDERS_INSIDE', $template);
+
+        $json_link = file_get_contents("https://panel.theclouds.pro/modules/addons/fs/tariff-list.php");
+        $items = json_decode($json_link, true);
+
+        foreach ($items as $item){
+            $data = array(
+                'type' => $item['hostingaccount'],
+                'name' => $item['name'],
+                'price' => array(
+                    'value' => $item['price']['price'],
+                    'prefix' => $item['price']['prefix'],
+                    'period' => $item['price']['period'],
+                ),
+                'url' => base64_decode($item['url']),
+                'cpu' => $item['cpu'],
+                'ram' => $item['ram'],
+                'hdd' => $item['hdd'],
+                'system' => $item['system'],
+                'dedicated_ips' => $item['dedicated_ips'],
+            );
+            $this->TPL->assign(array('ORD' => $data));
+            $this->TPL->parse($this->CONF['base_tpl'] . '.work_part.orders_inside.item');
+        }
+
+        $this->TPL->parse($this->CONF['base_tpl'] . '.work_part.orders_inside');
     }
 
     public function show_cookies(){
