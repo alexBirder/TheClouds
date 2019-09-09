@@ -43,6 +43,7 @@ class TSettings extends TCore {
                     'value' => $item['price']['month']['price'],
                     'prefix' => $item['price']['month']['prefix'],
                 ),
+                'url' => $item['url'],
                 'cpu' => $item['cpu'],
                 'ram' => $item['ram'],
                 'hdd' => $item['hdd'],

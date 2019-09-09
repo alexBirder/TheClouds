@@ -13,7 +13,7 @@
             </ul>
             <div class="offers--element--price"><span>{ORD.price.value} {ORD.price.prefix}</span></div>
             <div class="offers--element--intro">1VAT not included<br />Initial term of 36 months</div>
-            <div class="offers--element--button"><a href="/ru/page/tarify.html" class="button--offers">Подробнее</a></div>
+            <div class="offers--element--button"><a href="{ORD.url}" class="button--offers">Подробнее</a></div>
         </div>
     </div>
 </div>
