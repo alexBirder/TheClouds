@@ -33,6 +33,7 @@ class TPage extends TCore {
     public function process(){
         if($this->item == '11'){
             $template = $this->template_file("/templates/html/modules", "module_page_ord.tpl", $this->lang);
+            $this->call_module('settings', 'get_orders_inside');
         } else {
             $template = $this->template_file("/templates/html/modules", "module_page.tpl", $this->lang);
         }
