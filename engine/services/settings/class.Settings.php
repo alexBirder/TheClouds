@@ -41,7 +41,11 @@ class TSettings extends TCore {
                 'name' => $item['name'],
                 'tax' => $item['tax'],
                 'order' => $item['order'],
-                'price' => array('setupfee' => $item['setupfee'], 'price' => $item['price']),
+                'price' => array(
+                    'currency' => array('month' => $item['price']['USD']['month'], 'format' => $item['price']['USD']['month']['price'])
+                ),
+                'month' => $item['price']['USD']['month'],
+                'format' => $item['price']['USD']['month']['price']
             );
             $this->TPL->assign(array('ORD' => $data));
             $this->TPL->parse($this->CONF['base_tpl'] . '.orders.item');
