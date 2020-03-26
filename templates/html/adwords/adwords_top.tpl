@@ -3,7 +3,7 @@
     <div class="containerSlider--element" style="background: url('{ITEM.banner}') center center no-repeat;">
         <div class="containerSlider--present">
             <div class="containerWrapper">
-                {ITEM.intro}
+                <div class="containerSlider--padding">{ITEM.intro}</div>
             </div>
         </div>
     </div>
