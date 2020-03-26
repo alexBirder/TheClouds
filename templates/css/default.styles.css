@@ -129,5 +129,9 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 
 /* ---- ---- ---- ---- ---- ---- ---- ---- */
 @media screen and (max-width: 1580px){
-    .containerSlider--padding { padding-left: 100px; }
+    .containerSlider--padding { padding-left: 140px; }
+}
+
+@media screen and (max-width: 1450px){
+    .containerHeader .containerHeader--menu a { padding: 5px 10px; }
 }
