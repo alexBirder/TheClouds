@@ -139,3 +139,7 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
     .containerHeader .containerHeader--languages { margin-right: 20px; }
     .containerHeader .containerHeader--languages .languages--button { width: 60px; }
 }
+
+@media screen and (max-width: 1250px){
+    .containerHeader .containerHeader--menu { display: none; }
+}
