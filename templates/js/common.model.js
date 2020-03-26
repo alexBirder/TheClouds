@@ -8,7 +8,7 @@ $(document).ready(function(){
     $('.containerSlider--content--sliders').lightSlider({ auto: true, pager: false, controls: false, item: 1, mode: 'fade', loop: true, pause: 4000 });
 
     //-----------------------------------------
-    $('.sliderFooter').lightSlider({ auto: true, pager: false, controls: false, item: 3, loop: true, adaptiveHeight: true, pause: 4000 });
+    $('.sliderFooter').lightSlider({ auto: true, pager: false, controls: false, item: 3, loop: true, adaptiveHeight: true, pause: 4000, responsive : [{ breakpoint: 1000, settings: { item: 2, }}, { breakpoint: 600, settings: { item: 1 }}] });
 
     //-----------
     if(window.localStorage.getItem('policy_cookies') == null){
