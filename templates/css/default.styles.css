@@ -148,6 +148,11 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
     .containerMain .containerMain--tabs .containerMain--tabs--content { width: 80%; }
 }
 
+
+@media screen and (max-width: 900px){
+    .containerMain--offers .containerMain--offers--tab .offers--element { width: 50%; }
+}
+
 @media screen and (max-width: 700px){
     .containerSlider .containerSlider--bottom .containerSlider--bottom--content { width: 100%; }
     .containerMain .containerMain--tabs .containerMain--tabs--content { width: 100%; }
