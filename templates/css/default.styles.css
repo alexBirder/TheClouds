@@ -160,4 +160,5 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 
 @media screen and (max-width: 600px){
     .containerMain--offers .containerMain--offers--tab .offers--element { width: 100%; }
+    .containerFooter .containerFooter--left .containerFooter--menu a { margin-right: 10px; padding-right: 10px; }
 }
