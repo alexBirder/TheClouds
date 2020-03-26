@@ -1,6 +1,6 @@
 /* ---- ---- ---- ---- ---- ---- ---- ---- */
 .containerWrapper { width: 100%; max-width: 1350px; padding: 0 20px; box-sizing: border-box; margin: 0 auto; }
-.containerMain { position: relative; padding-top: 660px; }
+.containerMain { position: relative; padding-top: 660px; overflow: hidden; }
 .containerBackground { height: 80px; background: url('../img/otbivka.jpg') center center no-repeat; background-size: cover; display: block; }
 
 /* ---- ---- ---- ---- ---- ---- ---- ---- */
