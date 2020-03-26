@@ -148,6 +148,11 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
     .containerMain .containerMain--tabs .containerMain--tabs--content { width: 80%; }
 }
 
+@media screen and (max-width: 1000px){
+    .containerDefault .containerDefault--left { width: 100%; margin-bottom: 20px; }
+    .containerDefault .containerDefault--right { margin-left: 0; clear: both; }
+    .containerDefault .containerDefault--right img { max-width: 100%; }
+}
 
 @media screen and (max-width: 900px){
     .containerMain--offers .containerMain--offers--tab .offers--element { width: 50%; }
