@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    $('.containerHeader--burger').on('click', function(){
+        $('.containerHeader--menu').slideToggle('fast');
+    });
+
     //-----------------------------------------
     $('.masked').mask("+38 (999) 999-99-99");
     $('input[name="form[Телефон]"]').mask("+38 (999) 999-99-99");
