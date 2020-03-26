@@ -157,3 +157,7 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
     .containerSlider .containerSlider--bottom .containerSlider--bottom--content { width: 100%; }
     .containerMain .containerMain--tabs .containerMain--tabs--content { width: 100%; }
 }
+
+@media screen and (max-width: 600px){
+    .containerMain--offers .containerMain--offers--tab .offers--element { width: 100%; }
+}
