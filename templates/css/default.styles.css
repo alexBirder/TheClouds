@@ -57,7 +57,7 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 .containerHeader .containerHeader--links .links--name { font-size: 12px; text-transform: uppercase; margin-left: 45px; line-height: 16px; padding-top: 5px; }
 
 /* ---- ---- ---- ---- ---- ---- ---- ---- */
-.containerDefault { position: relative; padding-top: 40px; padding-bottom: 40px; min-width: 500px; overflow: hidden; }
+.containerDefault { position: relative; padding-top: 40px; padding-bottom: 40px; min-width: 570px; overflow: hidden; }
 .containerDefault img { max-width: 100%; }
 .containerDefault .containerDefault--left { float: left; width: 300px; position: relative; }
 .containerDefault .containerDefault--right { margin-left: 340px; }
@@ -92,7 +92,7 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 .containerMain--offers .containerMain--offers--tab .offers--element--content .offers--element--button .button--offers:hover { text-decoration: none; opacity: 0.7; }
 
 /* ---- ---- ---- ---- ---- ---- ---- ---- */
-.containerMain--bar { height: auto; background: url('../img/bar.jpg') center center no-repeat; background-size: cover; overflow: hidden; }
+.containerMain--bar { height: auto; background: url('../img/bar.jpg') center center no-repeat; background-size: cover; overflow: hidden; min-width: 570px; }
 .containerMain--bar .containerMain--bar--title { height: 120px; border-bottom: 1px solid rgba(255,255,255,0.2); text-align: center; color: #fff; font-size: 34px; font-weight: 700; line-height: 26px; padding-top: 40px; box-sizing: border-box; }
 .containerMain--bar .containerMain--bar--title small { display: block; font-size: 11px; font-weight: 400; color: rgba(255,255,255,0.6); }
 .containerMain--bar .containerMain--bar--content { padding-top: 40px; padding-bottom: 40px;}
@@ -100,7 +100,7 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 .containerMain--bar .containerMain--bar--content .containerMain--bar--element b { display: block; padding-bottom: 15px; font-size: 16px; }
 
 /* ---- ---- ---- ---- ---- ---- ---- ---- */
-.containerFooter { background: #3c4c6e; padding: 60px 40px; overflow: hidden; }
+.containerFooter { background: #3c4c6e; padding: 60px 40px; overflow: hidden; min-width: 570px; }
 .containerFooter .containerFooter--left { float: left; }
 .containerFooter .containerFooter--left .containerFooter--menu { position: relative; padding-bottom: 15px; }
 .containerFooter .containerFooter--left .containerFooter--menu a { display: inline-block; border-right: 1px solid rgba(255,255,255,0.2); padding: 5px 0; margin-right: 20px; padding-right: 20px; color: rgba(255,255,255,1); font-size: 14px; text-transform: uppercase; transition: all .2s; }
