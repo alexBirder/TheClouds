@@ -134,4 +134,8 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 
 @media screen and (max-width: 1450px){
     .containerHeader .containerHeader--menu a { padding: 5px 10px; }
+    .containerHeader .containerHeader--links { margin-right: 20px; }
+    .containerHeader .containerHeader--socials { padding-right: 20px; }
+    .containerHeader .containerHeader--languages { margin-right: 20px; }
+    .containerHeader .containerHeader--languages .languages--button { width: 60px; }
 }
