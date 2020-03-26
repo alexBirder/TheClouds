@@ -143,4 +143,5 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 @media screen and (max-width: 1250px){
     .containerHeader .containerHeader--menu { display: none; }
     .containerMain--offers .containerMain--offers--tab .offers--element { width: 33.3333%; }
+    .containerHeader .containerHeader--links .links--name { display: none; }
 }
