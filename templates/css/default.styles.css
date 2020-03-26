@@ -142,8 +142,8 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 
 @media screen and (max-width: 1250px){
     .containerHeader .containerHeader--menu { display: none; }
-    .containerHeader .containerHeader--logotype { float: left; margin: 23px 0 0 40px; }
-    .containerHeader .containerHeader--logotype .containerHeader--logo { width: 152px; height: 54px; }
+    .containerHeader .containerHeader--logotype { float: left; margin: 33px 0 0 40px; }
+    .containerHeader .containerHeader--logotype .containerHeader--logo { width: 164px; height: 38px; }
     .containerMain--offers .containerMain--offers--tab .offers--element { width: 33.3333%; }
     .containerHeader .containerHeader--links .links--name { display: none; }
     .containerSlider .containerSlider--bottom .containerSlider--bottom--content { width: 80%; }
