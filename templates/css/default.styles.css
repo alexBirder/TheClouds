@@ -38,6 +38,8 @@ body.inside .containerHeader { background: #3c4c6e; border-bottom: none; }
 .containerHeader .containerHeader--menu a { display: inline-block; border-right: 1px solid rgba(255,255,255,0.2); padding: 5px 20px; color: rgba(255,255,255,0.7); font-size: 14px; text-transform: uppercase; transition: all .2s; }
 .containerHeader .containerHeader--menu a:hover { color: #fff; text-decoration: none; }
 .containerHeader .containerHeader--menu a:last-child { border-right: none; }
+.containerHeader .containerHeader--burger { float: left; margin: 20px 0 0 20px; width: 32px; }
+.containerHeader .containerHeader--burger .burger--element { width: 100%; height: 3px; background: #fff; margin: 2px 0; }
 .containerHeader .containerHeader--logotype { float: left; margin: 23px 0 0 40px; }
 .containerHeader .containerHeader--logotype .containerHeader--logo { display: block; width: 252px; height: 54px; background: url('../img/logo.png') no-repeat; background-size: 100%; }
 .containerHeader .containerHeader--socials { float: right; height: 100px; line-height: 100px; padding-right: 40px; }

@@ -35,6 +35,12 @@
 
 <header class="containerHeader">
     <div class="containerHeader--logotype"><a href="/" class="containerHeader--logo"></a></div>
+    <div class="containerHeader--burger">
+        <div class="burger--element"></div>
+        <div class="burger--element"></div>
+        <div class="burger--element"></div>
+        <div class="burger--element"></div>
+    </div>
     <div class="containerHeader--menu">
         <a href="/{LANG}/page/about.html">О компании</a>
         <a href="/{LANG}/page/tarify.html">Тарифы</a>
